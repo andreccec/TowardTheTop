@@ -1,0 +1,379 @@
+*{
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 145vh;
+    position: relative;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(153,102,204,1) rgba(224,17,95,1) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    display: block;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 170px;
+}
+
+.logo{
+    width: 40%;
+    position: relative;
+    top: 0px;
+    border: 5px white;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #f2f2f2;
+}
+
+.item:hover{
+    color: #ff2258;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+a{
+    text-decoration: none;
+}
+#escudo{
+    width: 20%;
+    position: absolute;
+    left: 20%;
+}
+li {
+    background: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: azure;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+
+li:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, red, blue, deeppink, blue, red, blue, deeppink, blue);
+    background-size: 800%;
+    border-radius: 12px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.raps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+section{
+    display: flex;
+    height: 600px;
+    height: 430px;
+
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1 ;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+}
+
+section img:hover{
+    cursor: crosshair;
+    width: 100px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+p{
+    background: black;
+    font-family: 'Arsenal';
+    font-size: 25px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+}
+
+#text{
+    position: relative;
+    top: 100px;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+    text-align: center;
+    border-radius: 25pt;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    padding: 10px;
+    animation: led 2s infinite;
+    font-family: 'Rubik Dirt';
+}
+
+@keyframes led {
+    0%{
+        background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); 
+        transition: all 400ms ease;
+    }
+    25%{
+        background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+        transition: all 400ms ease;
+    }
+    50%{
+        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+        transition: all 400ms ease;
+    }
+    75%{
+        background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+        transition: all 400ms ease;
+    }
+    100%{
+        background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+        transition: all 400ms ease;
+    }
+}
+
+#navo{
+    display: none;
+}
+#btn-menu{
+    display: none;
+}
+
+#menu{
+    display: none;
+}
+.iconx{
+    display: none;
+}
+
+@media (max-width:600px){
+    body{
+        background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    }
+    header{
+        display: none;
+    }
+    #text{
+        width: 100%;
+        position: relative;
+        top: 150%;
+    }
+    .raps{
+       position: relative;
+       bottom: 200px;
+    }
+    #img1{
+        width: 90%;
+        display: block;
+        position: absolute;
+        top: 400%;
+    }
+
+    #img2{
+        width: 90%;
+        display: block;
+        position: absolute;
+        top: 100%;
+    }
+
+    #img3{
+        width: 90%;
+        display: block;
+        position: absolute;
+        top: 200%;
+    }
+
+    #img4{
+        width: 90%;
+        display: block;
+        position: absolute;
+        top: 300%;
+    }
+
+    #img5{
+        width: 90%;
+        display: block;
+        position: absolute;
+        top: 500%;
+    }
+
+    #boton{
+        display: none;
+    }
+    #menu{
+        display:block;
+        width: 50px;
+        position: absolute;
+        top: 0px;
+    }
+    #menu:hover{
+        transform: rotate(90deg);
+        transition: 1s;
+    }
+    .iconx{
+        display: block;
+        width: 5%;
+        position: absolute;
+        top: 10px;
+        left: 40%;
+    }
+    #btn-menu{
+        display: none;
+    }
+    .container-menu{
+        position: absolute;
+        background-color: rgba(0,0,0,0.5);
+        width: 100%;
+        height: 100vh;
+        top: 0%;
+        left: 0%;
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #btn-menu:checked~ .container-menu{
+        opacity: 1;
+        visibility: visible;
+    }
+    .cont-menu{
+        width: 100%;
+        max-width: 250px;
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);;
+        height: 100vh;
+        position: relative;
+        transition: all 500ms ease;
+        transform: translateX(-100%);
+    }
+    #btn-menu:checked~ .container-menu .cont-menu{
+        transform: translateX(0%);
+    }
+    .cont-menu nav{
+        transform: translateY(15%);
+    }
+
+    .cont-menu nav a{
+        display: block;
+        text-decoration: none;
+        padding: 40px;
+        color: black;
+        border-left: 5px solid transparent;
+        transition: all 400ms ease;        
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .cont-menu nav a:hover{
+        border-left:5px solid #1f1f1f;
+        background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    }
+    .cont-menu label{
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    a{
+        font-family:'Arsenal', sans-serif;
+    }
+    #navo{
+        display: block;
+    }
+    footer{
+        display: none;
+
+    }
+    .raps{
+        position: relative;
+        top: -40%;
+    }
+    #text{
+        position: absolute;
+        top: 160%;
+    }
+    .icon-menu{
+        position: absolute;
+        top: -15%;
+        left: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .container-menu{
+        position: absolute;
+        top: -15%;
+        left: 0;
+        padding: 0;
+        margin: 0;
+    }
+    header{
+        display: none;
+    }
+    #img2{
+        position: relative;
+        bottom: 20%;
+    }
+}
+
+footer{
+    position: relative;
+    top: 300px;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 20vh;
+    line-height: 50pt;
+    background: white;
+    font-size: 50px;
+    font-family: 'Rubik Dirt';
+    text-align: center;
+}

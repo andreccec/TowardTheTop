@@ -1,0 +1,214 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-left: 5%;
+    padding-right: 35%;
+    padding-bottom: 8px;
+}
+
+.logo{
+    height: 10vh ;
+    width: 10%;
+}
+
+h1{
+    font-size: 50px; 
+    letter-spacing: 8pt;
+    animation: titulo 4s alternate-reverse infinite;
+}
+
+.agustin,.andre,.joaquin,.samuel{
+    width: 20vw;
+    height: 50vh;
+    line-height: 3vh;
+}
+
+
+@keyframes  titulo{
+    0%{
+      color: #35BBCA;
+    }
+    25%{
+       color: #019164; 
+       text-shadow: -4pt 4pt 6pt #FE7A15;
+    }
+    50%{
+       color: #F8D90F;
+    }
+    75%{
+       color: #030D18;
+       text-shadow: #35BBCA;
+    }
+    100%{
+       color: #FE7A15;
+    }
+}
+
+nav > a{
+    color: black;
+    text-decoration: none;
+}
+
+nav > a:hover{
+    color: crimson;
+}
+
+hr{
+    height: 1.5vh;
+    background-color: #030D18;
+}
+
+.empresa{
+    height: 45vh;
+    width: 100%;
+}
+
+
+
+section {
+    background-color: silver;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10%;
+    
+}
+
+h2{
+    margin-right: 5%;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+#mision {
+     background-color: black;
+     color: aliceblue;
+     font-size: 2rem;
+     padding-top: 4%;
+     padding-bottom: 4%;
+     text-align: center;
+     padding-right: 4%;
+}
+
+
+
+
+h3 {
+    font-family: 'Rubik Mono One', monospace;
+    text-decoration: underline;
+    font-size: 2rem;
+    position: absolute;
+    left: 46%;
+    position: absolute;
+    
+}
+
+
+
+div {
+    background-color: gainsboro;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: -4px 4px 5px grey;
+    margin-top: 5%;  
+    height: 60vh;
+    line-height: 3vh;
+    
+}
+
+p{
+    margin-top: 1%;
+    font-family: 'Rubik', sans-serif;
+}
+
+div:hover{
+    animation: creadores 2s alternate-reverse ; 
+    background-color: gray;
+    color: azure;
+    box-shadow: -4px 4px 5px black;
+    transition: 1.5s;
+
+}
+
+@keyframes creadores{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+span > img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+
+
+.redes {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 30px;
+    margin-top: 20%;
+}
+
+
+
+
+@media screen and (max-width: 1008px) {
+
+    a{
+        margin-left: 18%;
+    }
+
+    .logo{
+       margin-right: 10%;
+       width: 25%;
+    }
+
+    .presentacion {
+        max-width: 90%;
+        font-size: 2vw;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    section{
+        flex-direction: column;
+    }
+    section > div {
+        padding: 10px;
+    }
+
+    span > img {
+        width: 90px;
+    }
+
+    .redes{
+        margin-top: 10%;
+        margin-right:20%;
+    }
+    h3{
+        left: 35%;
+        
+    }
+}

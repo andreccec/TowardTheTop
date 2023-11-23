@@ -1,0 +1,407 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.mivideo{
+    position: fixed;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+h3{
+    font-size: 28px;
+}
+
+p {font-size: 16px;}
+
+section{
+    position: absolute;
+    top: 15%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    min-height: 200vh;
+    filter: blur(100);
+    gap: 10px;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+div{
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    border-radius: 25pt;
+}
+
+.sublimacion{
+    grid-row: -2/-1;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+.tela{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.etiquetado{
+    grid-column: 3/4;
+    background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+
+.afiche{
+    background-size: contain;
+    background-position:  center;
+    background-repeat: no-repeat;
+    background-image:url('images/Afiche1.gif');
+    grid-column: 2/3;
+    grid-row: 2/3;
+   
+}
+.info{
+    grid-column: 2/3;
+    grid-row: -2/-1;
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.atencion-cliente{
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+.impresion{
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+}
+.confeccion{
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+.diseño{
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+div > img{
+    height: auto;
+    width: 25%;
+    position: relative;
+    left: 35%;
+}
+
+span{
+    filter: invert(100%);
+    z-index: -1;
+}
+
+div{
+    text-align: center;
+    padding: 10%;
+}
+
+
+#menub{
+    display: none;
+}
+#navO{
+    display: none;
+}
+#btn-menu{
+    display: none;
+}
+
+#menu{
+    display: none;
+}
+.iconx{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .mivideo{
+        width: 500vw;
+        object-fit: cover;
+    }
+    section{
+        display: grid;
+        grid-template-columns: 1,fr;
+        grid-row: 9,1fr;
+        gap: 25px;
+    }
+    div{
+        width: 225%;
+        line-height: 30pt;
+    }
+    .atencion-cliente{
+        width: 95vw;
+        grid-column:1/1;
+        grid-row: 1/2; 
+        height: 40vh;
+    }
+    .impresion{
+        grid-column:1/1; 
+        grid-row: 2/3; 
+        height: 40vh;
+        width: 95vw;
+    }
+
+    .sublimacion{
+        grid-column:1/1;
+        grid-row: 3/4;  
+        height: 40vh;
+        width: 95vw;
+    }
+    .confeccion{
+        grid-column:1/1;
+        grid-row: 4/5;  
+        height: 40vh;
+        width: 95vw;
+    }
+    
+    .tela{
+        
+        grid-column: 1/1;
+        grid-row: 5/6;
+        height: 40vh;
+        width: 95vw; 
+    }
+    
+    .etiquetado{
+        grid-column: 1/1;
+        grid-row: 6/7; 
+        height: 40vh;
+        width: 95vw;
+    }
+
+    .diseño{
+        grid-column: 1/1;
+        grid-row: 7/8; 
+        height: 40vh;
+        width: 95vw;
+    }
+    .info{
+        grid-column: 1/1;
+        grid-row: 8/9;
+        height: 40vh;
+        width: 95vw;
+    }
+    .afiche{
+      display: none;
+    }
+    nav{
+        display: none;
+        background-color: transparent;
+    }
+    #navO{
+        display: block;
+    }
+    #menu{
+        display: none;
+    }
+    #navo{
+        display: block;
+    }
+    
+    #escudo {
+        width: 30px;
+    }
+
+    .ini, .acer {
+        margin: 0;
+    }
+    
+    .presentacion {
+        max-width: 90%;
+        font-size: 2vw;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    section{
+        flex-direction: column;
+    }
+    section > div {
+        padding: 10px;
+    }
+
+    span > img {
+        width: 90px;
+    }
+    #boton{
+        display: none;
+    }
+    #menub{
+        display:block;
+        width: 50px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    #menub:hover{
+        transform: rotate(90deg);
+        transition: 1s;
+    }
+    .iconx{
+        display: block;
+        width: 5%;
+        position: absolute;
+        top: 10px;
+        left: 70%;
+    }
+    #btn-menu{
+        display: none;
+    }
+    .container-menu{
+        position: absolute;
+        background-color: #00000080;
+        width: 100%;
+        height: 100vh;
+        top: 0%;
+        right:0%;
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #btn-menu:checked~ .container-menu{
+        opacity: 1;
+        visibility: visible;
+    }
+    .cont-menu{
+        width: 100%;
+        max-width: 250px;
+        background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+        height: 100vh;
+        position: relative;
+        transition: all 500ms ease;
+        transform: translateX(-100%);
+    }
+    #btn-menu:checked~ .container-menu .cont-menu{
+        transform: translateX(0%);
+    }
+    .cont-menu nav{
+        transform: translateY(15%);
+    }
+
+    .cont-menu nav a{
+       
+        display: block;
+        text-decoration: none;
+        padding: 40px;
+        color: black;
+        border-left: 5px solid transparent;
+        transition: all 400ms ease;        
+    }
+
+    .cont-menu nav a:hover{
+        border-left:5px solid #1f1f1f;
+      
+    }
+    .cont-menu label{
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    a{
+        font-family:fantasy;
+    }
+   
+}
+#simbolo{
+    width: 25%;
+    position: relative;
+    top: -10px;
+    
+}
+
+#escudo{
+    width: 6%;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+nav{
+
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    width: 100%;
+    height: 15%;
+  position: absolute;
+    top:0px;
+    left: 0px;
+    right: 0px;
+    
+    
+}
+
+.ini,.acer{
+    color: #fff;
+    display: block;
+}
+
+#nav{
+   
+    position: absolute;
+    right: 30%;
+    top: 30%;
+}
+#nav1{
+  
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+
+#nav, #nav1{
+   color: white; 
+   font-family: 'Tilt Neon', sans-serif;
+   font-size: 20px;
+   text-decoration: none;
+   text-align: center;
+   width: 180px;
+   height: 30px;
+   border-radius: 25pt;
+   line-height: 20pt;
+   
+}
+
+#nav1:hover{
+    animation:  navs 2s infinite  ;
+}
+
+#nav:hover{
+    animation:  navs 2s infinite  ;
+}
+
+@keyframes navs {
+    0%{
+        border: 0px;
+    }
+
+    20%{
+        border-top: 5px solid #CD5C5C ;
+    }
+
+    40%{
+        border-left: 5px solid #DCDCDC;
+    }
+
+    60%{
+        border-bottom: 5px solid #00000080;
+    }
+
+    80%{
+        border-right: 5px solid #DAA520;
+    }
+
+    100%{
+        border: 0px;
+    }
+}

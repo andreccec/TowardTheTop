@@ -1,0 +1,189 @@
+body{
+    background: url('images/Vídeo\ Cuenta\ Atrás\ Moderno\ Colorido\ Violeta.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    height: 8vh;
+}
+#logo1{
+    width: 2%;
+    position: absolute;
+    right: 20px;
+    top: 120px;
+}
+#logo2{
+    width: 2%;
+    position: absolute;
+    right: 20px;
+    top: 180px;
+}
+#logo3{
+    width: 2%;
+    position: absolute;
+    right: 20px;
+    top: 240px;
+}
+#logo4{
+    width: 2%;
+    position: absolute;
+    right: 20px;
+    top: 300px;
+}
+#escudods{
+    width: 8%;
+}
+
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu #item{
+    float: right;
+}
+
+#menu #item a{
+    color:black;
+    padding: 12px 22px;
+    display: block;
+    font-family: 'Rubik Dirt';
+    font-size: 35px;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+}
+
+#menu #desple{
+    display: none;
+}
+
+#menu #item:hover #desple{
+    display: block;
+    transition: all 400ms ease;
+}
+
+#menu #item a:hover{
+    border-bottom: 5px solid #c7c7c7;
+    transition: all 400ms ease;
+}
+
+#navo{
+    display: none;
+}
+#btn-menu{
+    display: none;
+}
+
+#menub{
+    display: none;
+}
+.iconx{
+    display: none;
+}
+
+@media(max-width:600px){
+    body{
+        background: url('images/fonincel.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    nav{
+        display: none;
+        background-image: none;
+    }
+    #navO{
+        display: block;
+    }
+    #menu{
+        display: none;
+    }
+    #navo{
+        display: block;
+    }
+    
+    #boton{
+        display: none;
+    }
+    #menub{
+        display:block;
+        width: 50px;
+        position: absolute;
+        top: 0px;
+    }
+    #menub:hover{
+        transform: rotate(90deg);
+        transition: 1s;
+    }
+    .iconx{
+        display: block;
+        width: 5%;
+        position: absolute;
+        top: 10px;
+        left: 40%;
+    }
+    #btn-menu{
+        display: none;
+    }
+    .container-menu{
+        position: absolute;
+        background-color: rgba(0,0,0,0.5);
+        width: 100%;
+        height: 100vh;
+        top: 0%;
+        left: 0%;
+        transition: all 500ms ease;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #btn-menu:checked~ .container-menu{
+        opacity: 1;
+        visibility: visible;
+    }
+    .cont-menu{
+        width: 100%;
+        max-width: 250px;
+        background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+        height: 100vh;
+        position: relative;
+        transition: all 500ms ease;
+        transform: translateX(-100%);
+    }
+    #btn-menu:checked~ .container-menu .cont-menu{
+        transform: translateX(0%);
+    }
+    .cont-menu nav{
+        transform: translateY(15%);
+    }
+
+    .cont-menu nav a{
+        display: block;
+        text-decoration: none;
+        padding: 35px;
+        color: black;
+        border-left: 5px solid transparent;
+        transition: all 400ms ease;        
+    }
+
+    .cont-menu nav a:hover{
+        border-left:5px solid #1f1f1f;
+        background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    }
+    .cont-menu label{
+        position: absolute;
+        right: 5px;
+        top: 10px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 18px;
+    }
+
+    a{
+        font-family:'Arsenal', sans-serif;
+    }
+    
+}

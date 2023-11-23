@@ -1,0 +1,164 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #1F2452;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+}
+
+#inicio{
+    position: relative;
+    right: 50%;
+    font-family: 'Lilita One';
+    font-size:35px ;
+    text-decoration: none;
+    color: white;
+}
+
+
+.titulo {
+    margin-left: 10px;
+    font-size: 50px;
+    font-family: 'Lilita One';
+}
+
+.icono-carrito {
+    width: 50px;
+    background-color: white;
+    border-radius: 100%;
+    margin-right: 30px;
+    position: relative;
+    left: 75%;
+    
+}
+
+
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4F5589;
+    height: 50px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+nav:hover{
+    border-bottom: 5px solid darkblue;
+    transition: 2s;
+}
+
+.container {
+   
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 50px;
+    justify-content: center;
+}
+
+.tarjeta {
+    width: 250px;
+    height: 400px;
+    background-color: #4F5589;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 10px;
+    text-align: center;
+    color: snow;
+}
+
+.tarjeta:hover{
+    background-color: #424774;
+    width: 255px;
+    height: 405px;
+}
+
+.imagen{
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+.botonciyo {
+    margin-top: 10px;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #1F2452;
+    border: none;
+}
+
+.botonciyo:hover{
+    background-color: #505ab1;
+}
+
+.sub-menu-wrap {
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    width: 320px; 
+    max-height: 0px;
+    overflow-y: scroll;
+}
+
+.sub-menu-wrap.abrir-menu {
+    max-height: 400px;
+    background-color: aliceblue;
+}
+
+.sub-menu {
+    color: #505ab1;
+    background-color: white;
+    font-family: 'Lilita One';
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    
+}
+
+.compra-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media  (max-width: 600px) {
+    .titulo{
+        font-size: x-large;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .compra-1{
+        width: 80vw;
+    }
+    .compra-1:hover{
+        background-color: #424774;
+        width: 80vw;
+        height: 405px;
+    }
+    .titulo{
+        font-size: 25px;
+    }
+
+    #inicio{
+        font-size: 25px;
+        position: relative;
+        left: 0%;
+    }
+    .icono-carrito{
+        position: relative;
+        left: 30%;
+        top: 0;
+    }
+}

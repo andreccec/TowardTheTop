@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.ns {
+    background-image: linear-gradient(-225deg, hsla(166, 75%, 66%, 0.472) 0%, hsla(281, 75%, 89%, 0.627) 48%, hsla(247, 85%, 64%, 0.467) 100%),
+    url('images/OBJETIV.gif');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 50%; 
+    overflow: visible;
+    position: relative;
+}
+
+.elTitulo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Work Sans';
+    font-weight: 800;
+    color: #000000;
+    margin: 0;
+  }
+
+  .seccion1{
+    margin: auto;
+    width: 90vw;
+    min-height: 25vh;
+    background-color: aqua;
+    border-radius: 25px;
+  }
+
+ 
+  .obj1{
+    font-size: 1.3rem;
+    font-family: 'Tilt Neon';
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 100px;
+    line-height: 30pt;
+  }
+
+
+
+  section {
+    background-color: snow;
+    color: black;
+    font-family: 'Tilt Neon';
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+h3 {
+    font-family: 'Arsenal';
+    text-decoration: underline;
+    font-size: 2vw;
+    position: absolute;
+    margin: auto;
+    left: 45%;
+}
+section > div {
+    background-color: gainsboro;
+    border-radius: 5px;
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: -4px 4px 5px grey;
+    margin-top: 5%;
+}
+
+span > img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.agustin,.andre,.joaquin,.samuel{
+    width: 40vw;
+    height: 30vh;
+    line-height: 3vh;
+}
+
+.redes {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 600px) {
+    #escudo {
+        width: 30px;
+    }
+
+    .ini, .acer {
+        margin: 0;
+    }
+
+    .presentacion {
+        max-width: 90%;
+        font-size: 2vw;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    section{
+        flex-direction: column;
+    }
+    section > div {
+        padding: 10px;
+    }
+
+    span > img {
+        width: 90px;
+    }
+
+    h3{
+        font-size: 30px;
+
+    }
+
+    .agustin,.andre,.joaquin,.samuel{
+        width: 85vw;
+        height: 30vh;
+        line-height: 3vh;
+    }
+    .agustin{
+        margin-top: 60px;
+    }
+    footer{
+        width: 100vw;
+    }
+    section{
+        text-align: center;
+    }
+}
+div:hover{
+    animation: integrantes 1s alternate-reverse ; 
+    background-color: slategray;
+    color: #000000;
+    
+
+}
+
+#ini{
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 50px;
+    font-family: 'Tilt Neon';
+}
+footer{
+    background-color: aliceblue;
+    width: 100vw;
+    height: 10vh;
+    border: 7px darkblue solid;
+    text-align: center;
+    line-height: 60pt;
+}
+
+@keyframes integrantes{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}

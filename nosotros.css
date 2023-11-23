@@ -1,0 +1,108 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: black;
+}
+
+h1{
+    
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 5rem;
+    font-family: 'Rubik 80s Fade';
+}
+
+
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+section{
+    border: 3px solid red;
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    margin: auto;
+    margin-top: 5%;
+
+}
+
+div{
+    
+    background-size: cover;
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+    
+}
+
+.vision{
+    background-image: url('images/hero.jpg');
+}
+.mision{
+    background-image: url('images/empresa.jpg');
+}
+.obj-generales{
+    background-image: url('images/fondocolibri.jpg');
+}
+.obj-especificos{
+    background-image: url('images/coli.jpg');
+}
+
+div:hover{
+    cursor:crosshair;
+    width: 45%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    position: relative;
+    left: 6%;
+    top: 2%;
+    font-family: 'Rubik Mono One', monospace;
+    animation: colibri 5s alternate-reverse infinite;
+}
+
+@keyframes colibri {
+    0%{
+       color: yellow; 
+    }
+    25%{
+        color: crimson; 
+     }
+     50%{
+        color: cornflowerblue; 
+     }
+     75%{
+        color: fuchsia; 
+     }
+     100%{
+        color: steelblue; 
+     }
+}
+
+a:hover{
+    
+    transition: 1.5s ease;
+    left: 8%;
+}
+
+@media (max-width:600px){
+    h1{
+        font-size: 30px;
+    }
+}
+
+
+
